@@ -60,8 +60,7 @@ const forms = () => {
 
             let statusMessage = document.createElement('div');
             statusMessage.classList.add('status');
-            statusMessage.style.display = 'grid';
-            statusMessage.style.justifyContent = 'center';
+            statusMessage.style.textAlign = 'center';
             item.parentNode.appendChild(statusMessage);
 
             item.classList.add('animated', 'fadeOutUp');
@@ -72,7 +71,6 @@ const forms = () => {
             let statusImg = document.createElement('img');
             statusImg.setAttribute('src', message.spinner); 
             statusImg.classList.add('animated', 'fadeInUp');
-            statusImg.style.margin = 'auto';
             statusMessage.appendChild(statusImg);
 
             let textMessage = document.createElement('div');

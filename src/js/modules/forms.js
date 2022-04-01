@@ -18,7 +18,7 @@ const forms = () => {
     };
 
     const path = {
-        designer: 'assets/server.php',
+        server: 'assets/server.php',
         question: 'assets/question.php'
     };
     
@@ -70,7 +70,7 @@ const forms = () => {
 
             const formData = new FormData(item);
             let api;
-            item.closest('.popup-design') || item.classList.contains('server_form') ? api = path.designer : api = path.question;
+            item.closest('.popup-design') || item.classList.contains('server_form') ? api = path.server : api = path.question;
             console.log(api);
 
             postData(api, formData)

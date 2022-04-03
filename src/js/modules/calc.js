@@ -4,7 +4,8 @@ const calc = (size, material, options, promocode, result) => {
           materialBlock = document.querySelector(material),
           optionsBlock = document.querySelector(options),
           promocodeBlock = document.querySelector(promocode),
-          resultBlock = document.querySelector(result);
+          resultBlock = document.querySelector(result),
+          form = document.querySelectorAll('.server_form');
 
     let sum = 0;
 
@@ -24,7 +25,6 @@ const calc = (size, material, options, promocode, result) => {
     materialBlock.addEventListener('change', calcFunc);
     optionsBlock.addEventListener('change', calcFunc);
     promocodeBlock.addEventListener('input', calcFunc);
-
 };
 
 export default calc;

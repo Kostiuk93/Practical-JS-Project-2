@@ -16,7 +16,7 @@ const burger = (menuSelector, burgerSelector) => {
         if (window.screen.availWidth > 992) {
             menuElem.style.display = 'none';
         }
-    })
+    });
 };
 
 export default burger;
